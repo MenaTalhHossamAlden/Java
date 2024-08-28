@@ -1,4 +1,4 @@
-class HelloWorld {
+class Operators {
     public static void main(String[] args) {
         // assignment
         int number1 = 12;
@@ -19,5 +19,12 @@ class HelloWorld {
 
         // remainder (modulo/modulus)
         System.out.println(number1 % number2); // 0
+
+        // relational && logical
+        boolean isStudent = false;
+        boolean isLibraryMember = true;
+
+        System.out.println(!isStudent || isLibraryMember);
+
     }
 }   
