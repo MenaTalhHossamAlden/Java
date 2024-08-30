@@ -21,9 +21,11 @@ class Array {
         System.out.println(Arrays.toString(vowels));
 
         int numbers[] = {1, 2, 3, 4, 5};
-        int copyOfNumbers[] = numbers;
-        Arrays.fill(numbers, 0);
+        int copyOfNumbers[] = Arrays.copyOf(numbers, numbers.length);
+    
         System.out.println(Arrays.toString(numbers));
         System.out.println(Arrays.toString(copyOfNumbers));
+
+        System.out.println(Arrays.equals(numbers, copyOfNumbers));
     }
 }
